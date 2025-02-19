@@ -2,7 +2,7 @@
 """
 Created on Tue Jan  8 21:29:22 2019
 
-@author: andy
+@author: Andy Liang
 """
 
 import pygame, sys
@@ -12,11 +12,11 @@ screen=pygame.display.set_mode([800,800])
 screen.fill([180,180,180]) 
 running=True
 steps=0
-black=[]#黑棋的位置
+black=[]
 white=[]
 dots=[]#
 adots=[]#
-#黑棋和白棋重新分组
+
 def reaarange(t,steps):
     if steps%2==0:
         h=[]
@@ -34,7 +34,7 @@ def reaarange(t,steps):
         black.append(a)
         for k in h:
             black.remove(other[k])
-        return black   #这是黑棋重新分组
+        return black   
     else:
         h=[]
         other=[]
@@ -51,7 +51,7 @@ def reaarange(t,steps):
         white.append(a)
         for k in h:
             white.remove(other[k])
-        return white  #这是白棋重新分组
+        return white  
 
 def shuqi(i):
     q=0

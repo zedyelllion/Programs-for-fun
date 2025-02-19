@@ -2,22 +2,22 @@
 """
 Created on Sat Dec  8 16:47:35 2018
 
-@author: lhl
+@author: Andy Liang
 """
 
 import pygame, sys, random
 def drawText(text,posx,posy,textHeight=18,fontColor=(0,0,0),backgroudColor=(255,255,255)):
-        fontObj = pygame.font.Font('c:\\windows\\fonts\\ALGER.ttf', textHeight)  # 通过字体文件获得字体对象
-        textSurfaceObj = fontObj.render(text, True,fontColor,backgroudColor)  # 配置要显示的文字
-        textRectObj = textSurfaceObj.get_rect()  # 获得要显示的对象的rect
-        textRectObj.center = (posx, posy)  # 设置显示对象的坐标
-        screen.blit(textSurfaceObj, textRectObj)  # 绘制字
+        fontObj = pygame.font.Font('c:\\windows\\fonts\\ALGER.ttf', textHeight)  
+        textSurfaceObj = fontObj.render(text, True,fontColor,backgroudColor)  
+        textRectObj = textSurfaceObj.get_rect()  
+        textRectObj.center = (posx, posy)  
+        screen.blit(textSurfaceObj, textRectObj)  
         
 pygame.init()
 pygame.mixer.init()
 screen=pygame.display.set_mode([800,600])
 screen.fill([255,255,255]) 
-pygame.time.delay(1000) #建立背景
+pygame.time.delay(1000) 
 redx=[30,40,50,60,70,80]
 redy=[20,20,20,20,20,20]
 greenx=[30,40,50,60,70,80]

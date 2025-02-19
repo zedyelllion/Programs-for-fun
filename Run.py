@@ -2,7 +2,7 @@
 """
 Created on Mon Dec 10 13:05:37 2018
 
-@author: lhl
+@author: Andy
 """
 
 import pygame, sys, random
